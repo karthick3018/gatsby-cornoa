@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "author": "Karthick <karthick3018@gmail.com>",
   "homepage": "https://karthick3018.github.io/gatsby-corona/",
-
   "dependencies": {
     "chart.js": "^2.9.3",
     "gatsby": "^2.19.7",
@@ -39,7 +38,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy:github": "npm run build && node ./scripts/deploy-github"
 
   },
   "repository": {
