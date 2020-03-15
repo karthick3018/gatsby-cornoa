@@ -7,7 +7,6 @@
   "homepage": "https://karthick3018.github.io/gatsby-corona/",
   "dependencies": {
     "chart.js": "^2.9.3",
-    "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
@@ -23,6 +22,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gatsby": "^2.15.8-page-data-404.16",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
@@ -39,7 +39,6 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy:github": "npm run build && node ./scripts/deploy-github"
-
   },
   "repository": {
     "type": "git",
