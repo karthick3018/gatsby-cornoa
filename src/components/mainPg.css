@@ -1,0 +1,59 @@
+body {
+  overflow: hidden;
+}
+
+.main-container{
+  display: flex;
+}
+
+.img-wrapper {
+  width: 50%;
+  overflow: hidden;
+}
+
+.corona-img{
+  height: 100%;
+  width: 100%;
+}
+
+.dashBoard-wrapper{
+  margin: 11px 0px 0px 30px;
+  width: 670px;
+}
+
+.details-plate{
+  border: 1px solid;
+  border-radius: 15px;
+  width: 200px;
+  text-align: center;
+  padding: 10px 10px 10px 0px;
+  margin: 0 5px 0 0;
+  font-family: sans-serif;
+  height: 80px;
+}
+
+    .details-plate.confirmed{
+      background: #FFE915;
+    }
+
+    .details-plate.re-covered{
+      background:#3EA060;
+    }
+
+    .details-plate.death{
+      background:#EE6352
+    }
+
+    .details-plate.last-updated{
+      background:#EADEAD
+    }
+
+    .details-plate:hover{
+      
+    }
+
+
+
+.world-record{
+  display: flex;
+}
