@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{fjYy:function(n,e,t){"use strict";t.r(e);var o=t("q1tI"),r=t.n(o);e.default=function(){return r.a.createElement("p",null,"It's in the other folder , not in pages")}}}]);
+//# sourceMappingURL=component---src-components-check-pg-1-js-b31f640f50ceea6f5b91.js.map

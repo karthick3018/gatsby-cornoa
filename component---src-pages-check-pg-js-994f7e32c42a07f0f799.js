@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{HOEG:function(e,n,t){"use strict";t.r(n);var u=t("q1tI"),c=t.n(u);n.default=function(){return c.a.createElement("p",null,"Hey just checking the route")}}}]);
+//# sourceMappingURL=component---src-pages-check-pg-js-994f7e32c42a07f0f799.js.map
