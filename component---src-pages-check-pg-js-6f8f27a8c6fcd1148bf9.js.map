@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/checkPg.js"],"names":["checkPg"],"mappings":"0FAAA,2BAQeA,UANC,WACd,OACE","file":"component---src-pages-check-pg-js-6f8f27a8c6fcd1148bf9.js","sourcesContent":["import React from 'react';\n\nconst checkPg = () =>{\n  return(\n    <p>Hey just checking the route</p>\n  )\n}\n\nexport default checkPg;"],"sourceRoot":""}

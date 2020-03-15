@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{208:function(n,e,t){"use strict";t.r(e);var o=t(0),r=t.n(o);e.default=function(){return r.a.createElement("p",null,"It's in the other fold er , not in pages")}}}]);
+//# sourceMappingURL=component---src-components-check-pg-1-js-c50007ebafa4e91adb7d.js.map

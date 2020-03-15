@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/components/checkPg1.js"],"names":["checkPg1"],"mappings":"0FAAA,2BAMeA,UAJE,kBACf","file":"component---src-components-check-pg-1-js-c50007ebafa4e91adb7d.js","sourcesContent":["import React from 'react';\n\nconst checkPg1 = () =>(\n  <p>It's in the other fold er , not in pages</p>\n)\n\nexport default checkPg1;"],"sourceRoot":""}
