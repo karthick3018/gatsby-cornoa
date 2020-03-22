@@ -6,6 +6,15 @@ module.exports = {
     pathPrefix: "/gatsby-corona",
   },
   plugins: [
+    {
+      resolve:'gatsby-source-contentful',
+      options: {
+        // spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+        // accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN
+        spaceId:"9ape0xezaxv3",
+        accessToken: "FXIuKiDp6R0Wye1XcI2x9zAuYCIA5K0OT1TJIc8wGPs"
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

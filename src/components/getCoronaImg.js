@@ -20,3 +20,6 @@ return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default CoronaImg;
+
+
+//gatsby new kr-demo
