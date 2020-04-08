@@ -65,7 +65,7 @@ const IndexPage = () => {
         }]
       };
       chartDataResult.map(eachValue=>(
-          formattedChartValue.labels.push(eachValue.reportDateString),
+          formattedChartValue.labels.push(eachValue.reportDate),
           formattedChartValue.datasets[0].data.push(eachValue.totalConfirmed)
          
       ))
