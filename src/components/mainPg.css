@@ -4,6 +4,9 @@ body {
 
 .main-container{
   display: flex;
+  background-color:var(--background-color);
+  color:var(--color);
+
 }
 
 .img-wrapper {
@@ -57,3 +60,18 @@ body {
 .world-record{
   display: flex;
 }
+
+.country-select button{
+ color: var(--color);
+}
+
+.country-select ul{
+  background-color:var(--background-color);
+  color: var(--color);
+ }
+
+ .theme-text{
+   direction: rtl;
+ }
+
+ 

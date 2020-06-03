@@ -13,17 +13,22 @@ const IndexPage = () => {
   const [selectedCountryDetails, setSelectedCountryDetails] = useState(null);
   const [chartData, setChartData] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState('IN');
+  const [isDark, setIsDark] = useState(localStorage.getItem('theme')==='dark'?true:false);
 
 
 
 
 
   useEffect(() => {
-
+    
     dashBoardDataFetch();
     countryDetailsFetch('IN');
     chartDataFetch();
   }, [])
+
+  useEffect(()=>{
+    setThemeColor();
+  },[localStorage.getItem('theme')])
 
   
 
@@ -87,9 +92,27 @@ const IndexPage = () => {
   }
 
   const handleCountryChange = (value) => {
-    console.log('value', value)
     countryDetailsFetch(value);
     setSelectedCountry(value);
+  }
+
+  const handleThemeChange = () => {
+    if(isDark){
+      localStorage.setItem('theme','light');
+      setIsDark(false);
+
+    }
+    else {
+      localStorage.setItem('theme','dark')
+      setIsDark(true);
+    }
+    setThemeColor();
+  }
+
+  const setThemeColor = ()=> {
+    document
+    .getElementsByTagName("HTML")[0]
+    .setAttribute("data-theme", localStorage.getItem("theme"));
   }
 
   return (
@@ -101,8 +124,9 @@ const IndexPage = () => {
           <CoronaImg />
         </figure>
       </div>
-
+     
       <div className="dashBoard-wrapper">
+        <p className="theme-text" onClick = { handleThemeChange }>{ isDark?'light':'dark' } </p>
        <h3> Corona World Wide Update !</h3>
         <div className="world-record">
           <div className="details-plate confirmed">
