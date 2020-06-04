@@ -13,9 +13,9 @@ const IndexPage = () => {
   const [selectedCountryDetails, setSelectedCountryDetails] = useState(null);
   const [chartData, setChartData] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState('IN');
-  const [isDark, setIsDark] = useState(localStorage.getItem('theme')==='dark'?true:false);
+  const [isDark, setIsDark] = useState(false);
 
-
+  const windowGlobal = typeof window !== 'undefined' && window
 
 
 
@@ -28,7 +28,8 @@ const IndexPage = () => {
 
   useEffect(()=>{
     setThemeColor();
-  },[localStorage.getItem('theme')])
+
+  },[])
 
   
 
@@ -97,13 +98,16 @@ const IndexPage = () => {
   }
 
   const handleThemeChange = () => {
+  
+
+
     if(isDark){
-      localStorage.setItem('theme','light');
+      windowGlobal.localStorage.setItem('theme','light');
       setIsDark(false);
 
     }
     else {
-      localStorage.setItem('theme','dark')
+      windowGlobal.localStorage.setItem('theme','dark')
       setIsDark(true);
     }
     setThemeColor();
@@ -112,7 +116,7 @@ const IndexPage = () => {
   const setThemeColor = ()=> {
     document
     .getElementsByTagName("HTML")[0]
-    .setAttribute("data-theme", localStorage.getItem("theme"));
+    .setAttribute("data-theme", windowGlobal.localStorage.getItem("theme"));
   }
 
   return (
